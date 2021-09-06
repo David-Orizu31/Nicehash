@@ -1,0 +1,78 @@
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+.site-nav {
+    background-color: white !important;
+}
+
+.bar-toggle {
+    border: 1px solid transparent !important;
+    color: #fba342 !important;
+    font-size: 25px;
+}
+
+.bar-toggle:focus {
+    box-shadow: transparent !important;
+    border-color: transparent !important;
+}
+
+.navbar-nav .nav-item {
+    padding: 0px 15px 0px 15px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #fba342 !important;
+    border-bottom: 2px solid #fba342 !important;
+}
+
+.float-icons a {
+    color: rgba(71, 70, 70, 0.55);
+    padding: 0px 10px 0px 10px;
+    font-size: 17px;
+}
+
+.pause-area {
+    padding: 70px 0px 70px 0px;
+}
+
+.fa-pause {
+    color: rgba(71, 70, 70, 0.55);
+    font-size: 50px;
+    padding: 40px;
+    border-radius: 50%;
+    border: 10px solid #fba342;
+    box-shadow: 10px 10px 20px  rgb(207, 206, 206);
+}
+
+.pause-area p {
+    color: rgba(0,0,0,.55);
+    margin-top: 20px; 
+    font-size: 18px;
+}
+
+.ratings-area {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 25px;
+}
+
+.hash-group {
+   border-right: 1px solid rgb(207, 206, 206);
+   padding: 20px;
+}
+
+.hash-group.last {
+    border-right: 1px solid transparent;
+ }
+
+ .hash-group .hash-bgno {
+     font-size: 45px;
+ }
+
+ .hash-group p {
+     color: rgba(0,0,0,.55);
+     font-weight: 500;
+     padding-top: 10px;
+ }
