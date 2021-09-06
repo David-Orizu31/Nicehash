@@ -61,6 +61,7 @@ html, body {
 .hash-group {
    border-right: 1px solid rgb(207, 206, 206);
    padding: 20px;
+   height: auto;
 }
 
 .hash-group.last {
@@ -75,4 +76,54 @@ html, body {
      color: rgba(0,0,0,.55);
      font-weight: 500;
      padding-top: 10px;
+ }
+
+ .hash-group p .num-hash {
+     font-size: 20px;
+     color: black;
+ }
+
+ .hash-group.one-two {
+     height: 200px;
+ }
+
+ .status {
+     margin: 25px;
+ }
+
+ .status p {
+     font-size: 20px;
+     color: rgba(0,0,0,.55);
+ }
+
+ .status p span {
+     font-size: 15px;
+     padding: 7px;
+     color: white;
+     background-color: #fba342;
+ }
+
+ .worker-status {
+     padding: 30px 0px 30px 0px;
+ }
+
+ .worker-status span {
+     font-size: 17px;
+     color: rgba(0,0,0,.55);
+ }
+
+ .worker-status span.view {
+     float: right;
+ }
+
+ .worker-status span.first {
+     color: #fba342;
+ }
+
+ .img-process {
+     width: 100px;
+ }
+
+ .process-body {
+     padding: 50px 0px 50px 0px;
  }

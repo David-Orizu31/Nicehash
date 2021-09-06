@@ -3,4 +3,8 @@
         border-bottom: 1px solid rgb(207, 206, 206);
         border-right: 1px solid transparent;
      }
+
+     .hash-group.one-two {
+        height: auto;
+    }
 }

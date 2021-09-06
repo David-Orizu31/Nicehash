@@ -19,7 +19,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                <a class="nav-link active" aria-current="page" href="#">Basic</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Devices</a>
@@ -46,36 +46,69 @@
       <div class="container-fluid">
         <div class="pause-area" align="center">
           <i class="fas fa-pause"></i>
-          <p><b>Mining</b></p>
+          <a data-bs-toggle="modal" data-bs-target="#mining_proccessed" style="text-decoration: none; cursor: pointer;"><p><b>Mining</b></p></a>
+        </div>
+
+        <div class="status" align="right">
+          <p><b>Status : <span>Beginners</span></b></p>
         </div>
 
         <div class="ratings-area">
             <div class="row">
               <div class="col-md-2">
-                 <div class="hash-group" align="center">
+                 <div class="hash-group one-two" align="center">
                    <div class="hash-bgno"><b>4</b></div>
                    <p>MINING DURATION</p>
                  </div>
               </div>
               <div class="col-md-2">
-                 <div class="hash-group" align="center">
+                 <div class="hash-group one-two" align="center">
                   <div class="hash-bgno"><b>1</b></div>
                   <p>HASHRATE</p>
                  </div>
               </div>
               <div class="col-md-4">
                  <div class="hash-group" align="center">
-                   <p>TOTAL EARNING'S MINED</p>
+                   <p>EARNINGS</p>
+                   <p><span class="num-hash"><b>0,0191616</b></span> BTC / 24h</p>
+                   <p>=$ 141,69</p>
                  </div>
               </div>
               <div class="col-md-4">
                  <div class="hash-group last" align="center">
                    <p>INITIAL INVESTMENT</p>
+                   <p><span class="num-hash"><b>0,0191616</b></span> BTC / 24h</p>
+                   <p>=$ 141,69</p>
                  </div>
               </div>
             </div>
         </div>
+
+        <div class="worker-status">
+          <span><b>Worker name: <span class="first">My CashCow</span></b></span>
+          <span class="view first"><b>View Status Online</b></span>
+        </div>
       </div>
+
+<!-- Modal -->
+<div class="modal fade" id="mining_proccessed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mining_proccessedLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="mining_proccessedLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body process-body" align="center">
+         <h5>Your Mining is being processed</h5>
+         <img src="img/process-mining.gif" alt="process-mining" class="img img-process">
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
 </body>
