@@ -33,6 +33,7 @@ html, body {
     border-bottom: 2px solid #fba342 !important;
     width: 50px;
     font-size: 18px;
+    padding-bottom: 5px;
     margin: 20px;
 }
 
