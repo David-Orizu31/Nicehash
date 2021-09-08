@@ -134,5 +134,14 @@ html, body {
  }
 
  .process-body {
-     padding: 50px 0px 50px 0px;
+     padding: 10px 0px 40px 0px;
+ }
+
+ .process-head {
+     border-bottom: 1px solid transparent !important;
+ }
+
+ .btn-cancel {
+     background-color: #fba342;
+     width: 120px;
  }

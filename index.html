@@ -46,8 +46,10 @@
       <div class="container-fluid">
         <p class="basic"><b>Basic</b></p>
         <div class="pause-area" align="center">
+          <a data-bs-toggle="modal" data-bs-target="#mining_proccessed" style="text-decoration: none; cursor: pointer;">
           <i class="fas fa-pause"></i>
-          <a data-bs-toggle="modal" data-bs-target="#mining_proccessed" style="text-decoration: none; cursor: pointer;"><p><b>Mining</b></p></a>
+          <p><b>Mining</b></p>
+        </a>
         </div>
 
         <div class="status" align="right">
@@ -71,14 +73,14 @@
               <div class="col-md-4">
                  <div class="hash-group" align="center">
                    <p>EARNINGS</p>
-                   <p><span class="num-hash"><b>0,0191616</b></span> BTC / 24h</p>
+                   <p><span class="num-hash"><b>0.0191616</b></span> BTC / 24h</p>
                    <p>=$ 141,69</p>
                  </div>
               </div>
               <div class="col-md-4">
                  <div class="hash-group last" align="center">
                    <p>INITIAL INVESTMENT</p>
-                   <p><span class="num-hash"><b>0,0191616</b></span> BTC / 24h</p>
+                   <p><span class="num-hash"><b>0.0191616</b></span> BTC / 24h</p>
                    <p>=$ 141,69</p>
                  </div>
               </div>
@@ -95,17 +97,19 @@
 <div class="modal fade" id="mining_proccessed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mining_proccessedLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="mining_proccessedLabel"></h5>
+      <div class="modal-header process-head">
+        <h5 class="modal-title" id="mining_proccessedLabel" ></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div> -->
+      </div>
       <div class="modal-body process-body" align="center">
          <h5>Mining is being processed</h5>
          <img src="img/process-mining.gif" alt="process-mining" class="img img-process">
+         <div>
+          <button type="button" class="btn btn-cancel text-white" data-bs-dismiss="modal">Cancel</button>
+        </div>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+      <!-- <div class="modal-footer" align="center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
       </div> -->
     </div>
   </div>
