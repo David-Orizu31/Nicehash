@@ -46,7 +46,7 @@
       <div class="container-fluid">
         <p class="basic"><b>Basic</b></p>
         <div class="pause-area" align="center">
-          <a data-bs-toggle="modal" data-bs-target="#mining_proccessed" style="text-decoration: none; cursor: pointer;">
+          <a data-bs-toggle="modal" data-bs-target="#mine" style="text-decoration: none; cursor: pointer;">
           <i class="fas fa-pause"></i>
           <p><b>Mining</b></p>
         </a>
@@ -93,7 +93,28 @@
         </div>
       </div>
 
-<!-- Modal -->
+      <!-- Modal Mine in Process-->
+<div class="modal fade" id="mine" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mineLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header process-head">
+        <h5 class="modal-title" id="mineLabel" ></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body process-body" align="center">
+         <h5>Mine</h5>
+         <div>
+          <button type="button" class="btn btn-cancel text-white" data-bs-target="#mining_proccessed" data-bs-toggle="modal">Mine</button>
+        </div>
+      </div>
+      <!-- <div class="modal-footer" align="center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mining in Process-->
 <div class="modal fade" id="mining_proccessed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mining_proccessedLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -102,7 +123,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body process-body" align="center">
-         <h5>Mining is being processed</h5>
+         <h5>Your request is processing</h5>
          <img src="img/process-mining.gif" alt="process-mining" class="img img-process">
          <div>
           <button type="button" class="btn btn-cancel text-white" data-bs-dismiss="modal">Cancel</button>
